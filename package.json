@@ -1,0 +1,38 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "node server.js",
+    "client": "cd client && npm run start",
+    "start": "concurrently 'npm run server' 'npm run client'",
+    "test": "mocha --timeout 10000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chai": "^4.2.0",
+    "dateformat": "^3.0.3",
+    "express": "^4.16.4",
+    "express-winston": "^3.0.1",
+    "fs": "0.0.1-security",
+    "mocha": "^5.2.0",
+    "mongoose": "^5.3.7",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.0",
+    "passport-gitlab2": "^4.0.0",
+    "query-string": "^6.2.0",
+    "rxjs": "^6.3.3",
+    "rxjs-compat": "^6.3.3",
+    "shelljs": "^0.8.2",
+    "winston": "^3.1.0",
+    "chai-http": "^2.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1",
+    "nodemon": "^1.18.5"
+  }
+}
